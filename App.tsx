@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
-import { ProposalStage } from './types';
-import { QUESTIONS, NO_MESSAGES, PROPOSAL_IMAGE, SUCCESS_IMAGE } from './constants';
-import FloatingHearts from './components/FloatingHearts';
+import { ProposalStage } from './types.ts';
+import { QUESTIONS, NO_MESSAGES, PROPOSAL_IMAGE, SUCCESS_IMAGE } from './constants.tsx';
+import FloatingHearts from './components/FloatingHearts.tsx';
 
 const App: React.FC = () => {
   const [stage, setStage] = useState<ProposalStage>(ProposalStage.INTRO);
